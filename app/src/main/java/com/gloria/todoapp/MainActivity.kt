@@ -10,8 +10,8 @@ import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
-    val validuserName: String = "Admin"
-    val validpassword: String = "Admin"
+    val validuserName: String = "admin"
+    val validpassword: String = "admin"
 
     //layout variables
     private lateinit var userNameinput: EditText
@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun isvalidCredentials(userName: String, password: String): Boolean {
-        if (userName == validuserName && password == validpassword) return true
+        if (password == validpassword) return true
         return false
     }
 

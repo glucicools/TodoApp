@@ -13,6 +13,7 @@ class HomeActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_home2)
 
         userNameDisplay = findViewById(R.id.userNameDisplay)
-        userNameDisplay.text = "This home page"
+
+        userNameDisplay.text = intent.getStringExtra( "username")
     }
 }
