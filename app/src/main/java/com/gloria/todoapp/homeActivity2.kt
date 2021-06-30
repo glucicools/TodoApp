@@ -15,7 +15,7 @@ class HomeActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_home2)
 
         profile = findViewById(R.id.profile)
-        profile.setOnClickListener {
+         profile.setOnClickListener {
             val intent: Intent = Intent(this, profileactivity::class.java)
             startActivity(intent)
         }
